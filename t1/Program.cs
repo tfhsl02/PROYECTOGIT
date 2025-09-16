@@ -26,7 +26,7 @@ namespace t1
             Console.WriteLine("Ingresar tipo de cliente" + "\n1.frecuente \n2.nuevo \n3.corporativo");
             tipo = int.Parse(Console.ReadLine());
 
-            //USO DE DESCUENTOS
+            //APLICACIÓN DE DESCUENTOS
             decimal descuento = 0;
             switch (tipo)
             {
@@ -46,6 +46,7 @@ namespace t1
             IGV = pcondescuento * 0.18M;
                 pfinal = pcondescuento + IGV;
             //FACTURACIÓN
+            Console.WriteLine("---- RESUMEN DE COMPRA ----");
             Console.WriteLine($"Nombre del producto: {nomproducto}");
             Console.WriteLine($"Precio del producto: S/ {pbase:F2}");
             Console.WriteLine($"Descuento aplicado: {pcondescuento:F2}");
